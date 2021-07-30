@@ -40,9 +40,9 @@ namespace TestUnit
         [TestCase(50, 5, 10)]
         [TestCase(-100, -10, 10)]
         [TestCase(-15, 5, -3)]
-       // [TestCase(1, 3, 1 / 3)]
-       // [TestCase(2, 1, 2)]
-       // [TestCase(9, 3, 3)]
+        // [TestCase(1, 3, 1 / 3)]
+        // [TestCase(2, 1, 2)]
+        // [TestCase(9, 3, 3)]
         public void Division_TC(double a, double b, double c)
         {
             Assert.AreEqual(c, CalcMut.Division(a, b));
