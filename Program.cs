@@ -75,7 +75,7 @@ namespace CalculatorMutant
         }
         public static double Division(double a, double b)
         {
-            double c = a / b; //Adding the mutant
+            double c = a * b; //Adding the mutant
             return c;
         }
 
