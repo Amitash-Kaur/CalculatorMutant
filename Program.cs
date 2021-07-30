@@ -1,16 +1,16 @@
 ﻿using System;
 
-namespace CalculatorExmple
+namespace CalculatorMutant
 {
-    public class CalculatorMutant
+    public class CalcMut
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Enter the action to be performed");
-            Console.WriteLine("Press 1 for Addition");
-            Console.WriteLine("Press 2 for Subtraction");
-            Console.WriteLine("Press 3 for Multiplication");
-            Console.WriteLine("Press 4 for Division \n");
+            Console.WriteLine("Please select from below options:");
+            Console.WriteLine("1. Addition");
+            Console.WriteLine("2. Subtraction");
+            Console.WriteLine("3. Multiplication");
+            Console.WriteLine("4. Division \n");
 
             int operation = Convert.ToInt32(Console.ReadLine());
 
@@ -48,7 +48,7 @@ namespace CalculatorExmple
                     }
 
                 default:
-                    Console.WriteLine("INVALID VALUE! try again");
+                    Console.WriteLine("INVALID VALUE!! please try again!!");
                     break;
             }
             Console.WriteLine("The result is {0}", result);
@@ -75,7 +75,7 @@ namespace CalculatorExmple
         }
         public static double Division(double a, double b)
         {
-            double c = a * b; //Adding the mutant
+            double c = a / b; //Adding the mutant
             return c;
         }
 
